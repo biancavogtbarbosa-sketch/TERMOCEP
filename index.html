@@ -1,1 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TERMOCEP | Aquecimento sustentável da piscina térmica do Colégio Estadual do Paraná</title>
+  <meta name="description" content="Projeto integrador TERMOCEP: solução conceitual de aquecimento solar térmico, automação, robótica, física óptica e acessibilidade para a piscina térmica do Colégio Estadual do Paraná." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/simulador.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">TERMO<span>CEP</span></a>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-button" type="button" aria-pressed="false" aria-label="Alternar tema claro ou escuro">🌓</button>
+        <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu de navegação">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <nav id="siteNav" class="site-nav" aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#solucao">Solução</a></li>
+          <li><a href="#optica">Óptica</a></li>
+          <li><a href="#materiais">Materiais</a></li>
+          <li><a href="#robotica">Robótica</a></li>
+          <li><a href="#simulador">Simulador</a></li>
+          <li><a href="#acessibilidade">Acessibilidade</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Projeto Integrador • Colégio Estadual do Paraná • 2º M - manhã</p>
+          <h1 id="titulo-hero">TERMOCEP</h1>
+          <p class="lead">
+            Aquecimento sustentável, automação e acessibilidade para a piscina térmica do Colégio Estadual do Paraná,
+            unindo Física, Robótica, Programação e inclusão digital.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#sobre">Entender o projeto</a>
+            <a class="button secondary" href="#simulador">Ver simulador</a>
+            <a class="button outline" href="#robotica">Conhecer a automação</a>
+          </div>
+
+          <dl class="hero-stats">
+            <div>
+              <dt>Energia solar</dt>
+              <dd>Aproveitamento térmico</dd>
+            </div>
+            <div>
+              <dt>Automação</dt>
+              <dd>Sensores e controle</dd>
+            </div>
+            <div>
+              <dt>Acessibilidade</dt>
+              <dd>UX inclusiva</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-panel" aria-hidden="true">
+          <div class="badge">☀️ Energia limpa</div>
+          <div class="badge">💧 Uso responsável da água</div>
+          <div class="badge">🤖 Tecnologia educacional</div>
+          <div class="badge">♿ Inclusão digital</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section reveal" aria-labelledby="titulo-sobre">
+      <div class="container">
+        <h2 id="titulo-sobre">Sobre o projeto</h2>
+        <p>
+          O TERMOCEP propõe uma solução conceitual para aquecer e automatizar a piscina térmica do Colégio Estadual do Paraná.
+          A ideia é usar energia solar térmica, sensores e programação para reduzir o consumo de energia elétrica,
+          melhorar o controle da temperatura e tornar o uso da piscina mais eficiente e sustentável.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Desafio</h3>
+            <p>
+              Manter uma piscina térmica aquecida exige energia constante. Sem controle adequado, há desperdício térmico
+              e maior custo ambiental e econômico.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Integração</h3>
+            <p>
+              O projeto relaciona óptica, termologia, robótica e programação em uma proposta aplicada ao cotidiano escolar.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Comunidade</h3>
+            <p>
+              Além da parte técnica, o site comunica ciência, sustentabilidade e acessibilidade para estudantes,
+              professores e comunidade escolar.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="problema" class="section reveal" aria-labelledby="titulo-problema">
+      <div class="container">
+        <h2 id="titulo-problema">Problema e impacto social</h2>
+        <p>
+          Aquecer piscinas pode consumir muita energia, principalmente quando o sistema funciona sem controle automático,
+          sem isolamento térmico adequado ou sem aproveitamento de fontes renováveis.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Consumo elevado</h3>
+            <p>
+              Aquecedores elétricos podem gerar alto consumo, aumentando custos e sobrecarregando a rede elétrica.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Impacto ambiental</h3>
+            <p>
+              Quanto maior o consumo de energia não renovável, maiores podem ser as emissões e os impactos ambientais
+              associados à geração elétrica.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Sustentabilidade</h3>
+            <p>
+              Usar energia solar térmica e automação ajuda a economizar energia, reduzir desperdícios e promover
+              conscientização na comunidade escolar.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucao" class="section reveal" aria-labelledby="titulo-solucao">
+      <div class="container">
+        <h2 id="titulo-solucao">Solução proposta</h2>
+        <p>
+          A proposta do TERMOCEP é um sistema híbrido conceitual: coletores solares térmicos aquecem a água,
+          enquanto um painel de controle com sensores e atuadores organiza o funcionamento da bomba e das válvulas.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Coletores solares térmicos</h3>
+            <p>Superfícies que absorvem radiação solar e transferem calor para a água.</p>
+          </article>
+
+          <article class="card">
+            <h3>Painel elétrico de controle</h3>
+            <p>Central que recebe dados dos sensores e decide quando ligar ou desligar o sistema.</p>
+          </article>
+
+          <article class="card">
+            <h3>Sensores</h3>
+            <p>Temperatura, luminosidade, fluxo e nível ajudam o sistema a funcionar com segurança.</p>
+          </article>
+
+          <article class="card">
+            <h3>Bomba e válvulas</h3>
+            <p>Controlam a circulação da água entre a piscina e o sistema de aquecimento.</p>
+          </article>
+
+          <article class="card">
+            <h3>Cobertura térmica</h3>
+            <p>Reduz perdas de calor, principalmente à noite e em dias frios.</p>
+          </article>
+
+          <article class="card">
+            <h3>Dashboard educativo</h3>
+            <p>Mostra dados simulados de temperatura, consumo e eficiência para fins didáticos.</p>
+          </article>
+        </div>
+
+        <p class="notice">
+          O sistema apresentado é conceitual e educacional. Ele serve para demonstrar princípios de física,
+          automação, sustentabilidade e programação.
+        </p>
+      </div>
+    </section>
+
+    <section id="optica" class="section reveal" aria-labelledby="titulo-optica">
+      <div class="container">
+        <h2 id="titulo-optica">Tecnociência e Óptica aplicada</h2>
+        <p>
+          O aquecimento solar térmico depende diretamente da forma como a luz e a radiação interagem com os materiais.
+          Quando a radiação solar atinge uma superfície, parte dela pode ser absorvida, parte refletida e, em materiais
+          transparentes, parte transmitida por refração.
+        </p>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>Disco de Newton</h3>
+            <p>
+              O Disco de Newton mostra que a luz branca é composta por várias cores. Cada cor corresponde a um
+              comprimento de onda diferente. Isso ajuda a entender que a radiação solar possui várias faixas do espectro,
+              e que materiais diferentes interagem de maneiras diferentes com essas faixas.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Câmara escura</h3>
+            <p>
+              A câmara escura demonstra a propagação retilínea da luz e o controle da entrada de radiação por uma abertura.
+              No projeto, essa ideia pode ser relacionada ao controle da radiação que entra no coletor e ao isolamento
+              para reduzir perdas térmicas.
+            </p>
+          </article>
+        </div>
+
+        <article class="card">
+          <h3>Aplicação prática no coletor</h3>
+          <p>
+            Superfícies escuras tendem a absorver mais radiação e, por isso, aquecem mais. Superfícies claras refletem
+            mais luz e geralmente apresentam menor eficiência para aquecimento. Em um coletor solar térmico, busca-se
+            uma superfície com boa absorção da radiação solar, cobertura transparente para reduzir perdas e isolamento
+            térmico para conservar o calor.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="materiais" class="section reveal" aria-labelledby="titulo-materiais">
+      <div class="container">
+        <h2 id="titulo-materiais">Materiais e eficiência energética</h2>
+        <p>
+          A escolha da superfície do coletor influencia diretamente na quantidade de calor absorvida.
+          Os valores abaixo são estimativas educacionais para comparação.
+        </p>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>Comparador de materiais</h3>
+
+            <div class="field">
+              <label for="materialComparador">Selecione uma superfície</label>
+              <select id="materialComparador">
+                <option value="preto-seletivo" selected>Preto seletivo</option>
+                <option value="preto-fosco">Preto fosco</option>
+                <option value="azul-escuro">Azul-escuro</option>
+                <option value="cinza">Cinza</option>
+                <option value="branco">Branco</option>
+              </select>
+            </div>
+
+            <div id="comparadorResultado" class="result-box" aria-live="polite">
+              <p><strong>Absorção estimada:</strong> <span id="compAbs">--</span></p>
+              <p><strong>Reflexão estimada:</strong> <span id="compRefl">--</span></p>
+              <p><strong>Eficiência estimada:</strong> <span id="compEf">--</span></p>
+              <p id="compDesc" class="muted"></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Gráfico comparativo</h3>
+            <div id="chartBars" class="chart" role="img" aria-label="Gráfico de barras comparando eficiência estimada dos materiais"></div>
+
+            <div class="table-wrapper">
+              <table class="table">
+                <caption class="sr-only">Tabela de comparação de materiais, absorção, reflexão e eficiência estimadas</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Material</th>
+                    <th scope="col">Absorção</th>
+                    <th scope="col">Reflexão</th>
+                    <th scope="col">Eficiência</th>
+                  </tr>
+                </thead>
+                <tbody id="tabelaMateriaisBody"></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+
+        <article class="card">
+          <h3>Cuidados importantes</h3>
+          <p>
+            Além da superfície, fatores como cobertura transparente, isolamento térmico, tubulação adequada,
+            manutenção preventiva e redução de perdas térmicas são essenciais para aumentar a eficiência do sistema.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="robotica" class="section reveal" aria-labelledby="titulo-robotica">
+      <div class="container">
+        <h2 id="titulo-robotica">Robótica e Programação</h2>
+        <p>
+          A parte de automação organiza o funcionamento do sistema. Sensores coletam dados, o controlador toma decisões
+          e atuadores executam ações, como ligar ou desligar a bomba.
+        </p>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>Sensores</h3>
+            <ul>
+              <li>Sensor de temperatura da piscina</li>
+              <li>Sensor de temperatura do coletor</li>
+              <li>Sensor de luminosidade</li>
+              <li>Sensor de fluxo</li>
+              <li>Sensor de nível</li>
+              <li>Relógio/temporizador</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Atuadores e controle</h3>
+            <ul>
+              <li>Microcontrolador ou placa conceitual</li>
+              <li>Relé</li>
+              <li>Bomba d'água</li>
+              <li>Válvula</li>
+              <li>Display ou painel</li>
+              <li>Dashboard educativo</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="card">
+          <h3>Fluxograma do funcionamento</h3>
+          <ol class="flow">
+            <li>Inicializar sistema.</li>
+            <li>Ler sensores de temperatura, luminosidade, fluxo e nível.</li>
+            <li>Verificar se há radiação solar suficiente.</li>
+            <li>Verificar se a temperatura do coletor está maior que a da piscina.</li>
+            <li>Verificar se há fluxo e nível adequados.</li>
+            <li>Ligar a bomba se as condições forem seguras.</li>
+            <li>Monitorar continuamente.</li>
+            <li>Desligar ao atingir a temperatura desejada.</li>
+            <li>Entrar em modo de segurança se houver falha.</li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3>Pseudocódigo comentado</h3>
+          <pre><code>
+início
+  ler sensores
+  se temperatura_do_coletor > temperatura_da_piscina + limite
+     e luminosidade > mínimo
+     e fluxo_ok == verdadeiro
+     e nivel_ok == verdadeiro então
+        ligar bomba
+  senão
+        desligar bomba
+  fim se
+
+  se temperatura_da_piscina >= temperatura_desejada então
+        desligar bomba
+  fim se
+
+  se falha_detectada == verdadeiro então
+        ativar modo_segurança
+  fim se
+fim
+          </code></pre>
+        </article>
+      </div>
+    </section>
+
+    <section id="simulador" class="section reveal" aria-labelledby="titulo-simulador">
+      <div class="container">
+        <h2 id="titulo-simulador">Simulador interativo</h2>
+        <p>
+          Este simulador educacional estima a energia necessária para aquecer a piscina e o possível aproveitamento
+          da energia solar térmica.
+        </p>
+
+        <p class="notice">
+          Os valores são estimativas educacionais e não substituem um cálculo técnico profissional.
+        </p>
+
+        <form id="formSimulador" novalidate>
+          <div class="controls-grid">
+            <div class="field">
+              <label for="area">Área dos coletores: <output id="areaOut">20</output> m²</label>
+              <input type="range" id="area" min="5" max="200" step="1" value="20" />
+            </div>
+
+            <div class="field">
+              <label for="irradiacao">Irradiação solar diária: <output id="irradiacaoOut">5,0</output> kWh/m²/dia</label>
+              <input type="range" id="irradiacao" min="2" max="8" step="0.1" value="5" />
+            </div>
+
+            <div class="field">
+              <label for="materialColetor">Tipo de superfície</label>
+              <select id="materialColetor">
+                <option value="preto-seletivo" selected>Preto seletivo</option>
+                <option value="preto-fosco">Preto fosco</option>
+                <option value="azul-escuro">Azul-escuro</option>
+                <option value="cinza">Cinza</option>
+                <option value="branco">Branco</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="volume">Volume da piscina: <output id="volumeOut">50.000</output> litros</label>
+              <input type="range" id="volume" min="5000" max="200000" step="1000" value="50000" />
+            </div>
+
+            <div class="field">
+              <label for="tempInicial">Temperatura inicial: <output id="tempInicialOut">22</output> °C</label>
+              <input type="range" id="tempInicial" min="10" max="35" step="1" value="22" />
+            </div>
+
+            <div class="field">
+              <label for="tempDesejada">Temperatura desejada: <output id="tempDesejadaOut">30</output> °C</label>
+              <input type="range" id="tempDesejada" min="20" max="40" step="1" value="30" />
+            </div>
+
+            <div class="field checkbox">
+              <input type="checkbox" id="cobertura" checked />
+              <label for="cobertura">Usar cobertura térmica</label>
+            </div>
+
+            <div class="field">
+              <label for="perda">Perda térmica estimada</label>
+              <select id="perda">
+                <option value="baixa" selected>Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+          </div>
+        </form>
+
+        <div id="resultadoSimulador" class="result-grid" aria-live="polite" tabindex="-1">
+          <article class="card metric">
+            <h3>Energia necessária</h3>
+            <p id="resEnergia">--</p>
+          </article>
+
+          <article class="card metric">
+            <h3>Energia solar útil/dia</h3>
+            <p id="resSolarDia">--</p>
+          </article>
+
+          <article class="card metric">
+            <h3>Tempo estimado</h3>
+            <p id="resDias">--</p>
+          </article>
+
+          <article class="card metric">
+            <h3>Economia potencial</h3>
+            <p id="resEconomia">--</p>
+          </article>
+        </div>
+
+        <p id="resComparacao" class="muted"></p>
+        <p id="resMsg" class="form-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="acessibilidade" class="section reveal" aria-labelledby="titulo-acessibilidade">
+      <div class="container">
+        <h2 id="titulo-acessibilidade">Acessibilidade digital</h2>
+        <p>
+          O site foi pensado para ser acessível, legível e compreensível. Também relacionamos óptica com visão:
+          pessoas com miopia, hipermetropia ou astigmatismo podem se beneficiar de fontes maiores, bom contraste,
+          espaçamento adequado e linguagem clara.
+        </p>
+
+        <article class="card">
+          <h3>Ajustar tamanho do texto</h3>
+          <div class="actions">
+            <button id="diminuirFonte" class="button secondary" type="button">Diminuir fonte</button>
+            <button id="aumentarFonte" class="button" type="button">Aumentar fonte</button>
+            <button id="restaurarFonte" class="button outline" type="button">Restaurar</button>
+          </div>
+          <p id="fonteAtual" aria-live="polite">Tamanho atual: 100%</p>
+        </article>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>Recursos implementados</h3>
+            <ul>
+              <li>Skip link para pular ao conteúdo principal.</li>
+              <li>Contraste adequado entre texto e fundo.</li>
+              <li>Navegação por teclado.</li>
+              <li>Foco visível nos elementos interativos.</li>
+              <li>Textos alternativos e rótulos acessíveis.</li>
+              <li>Formulário com mensagens de erro claras.</li>
+              <li>Respeito à preferência de movimento reduzido.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Óptica e visão</h3>
+            <p>
+              A óptica também ajuda a entender a correção visual. Lentes e foco são usados para auxiliar pessoas com
+              diferentes necessidades visuais. No site, isso se traduz em:
+            </p>
+            <ul>
+              <li>Fontes legíveis e ampliáveis.</li>
+              <li>Bom espaçamento entre textos.</li>
+              <li>Contraste para facilitar a leitura.</li>
+              <li>Informações sem depender apenas de cor.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="section reveal" aria-labelledby="titulo-equipe">
+      <div class="container">
+        <h2 id="titulo-equipe">Equipe</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Bianca Vogt Barbosa</h3>
+            <p>Nº 2 • Conteúdo científico, óptica e organização do projeto.</p>
+          </article>
+
+          <article class="card">
+            <h3>Davi Vianna</h3>
+            <p>Nº 5 • Programação, JavaScript e lógica do simulador.</p>
+          </article>
+
+          <article class="card">
+            <h3>Gabrial Henrique</h3>
+            <p>Nº 7 • Robótica, sensores, atuadores e fluxo do sistema.</p>
+          </article>
+
+          <article class="card">
+            <h3>Lucca Ceron</h3>
+            <p>Nº 18 • Design, experiência do usuário e acessibilidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section reveal" aria-labelledby="titulo-contato">
+      <div class="container">
+        <h2 id="titulo-contato">Contato / Demonstração</h2>
+        <p>
+          Este formulário é demonstrativo e valida os dados com JavaScript, sem enviar informações para um servidor.
+        </p>
+
+        <form id="formContato" class="card" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" aria-describedby="erro-nome" required />
+            <p id="erro-nome" class="field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" aria-describedby="erro-email" required />
+            <p id="erro-email" class="field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" aria-describedby="erro-mensagem" required></textarea>
+            <p id="erro-mensagem" class="field-error" aria-live="polite"></p>
+          </div>
+
+          <button class="button" type="submit">Enviar mensagem</button>
+          <p id="formStatus" class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p><strong>TERMOCEP</strong> — Colégio Estadual do Paraná</p>
+        <p>Projeto integrador: Programação, Física e Tecnociência, Robótica.</p>
+      </div>
+
+      <div>
+        <p>
+          <a href="https://github.com/SEU_USUARIO/termocep" target="_blank" rel="noopener">
+            GitHub do projeto
+          </a>
+        </p>
+        <p>Ano: <span id="anoAtual">2026</span></p>
+      </div>
+
+      <div>
+        <p>Sustentabilidade, tecnologia e inclusão para a comunidade escolar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="voltarTopo" class="back-top" type="button" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>
